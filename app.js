@@ -12,7 +12,7 @@ const CELL_SIZE = 30;
 const WORLD_WIDTH = Math.floor(canvas.width / CELL_SIZE);
 const WORLD_HEIGHT = Math.floor(canvas.height / CELL_SIZE);
 const MOVE_INTERVAL = 200;
-const FOOD_SPAN_INTERVAL = 1500;
+const FOOD_SPAN_INTERVAL = 2500;
 
 
 
@@ -128,7 +128,7 @@ function render() {
     ctx.textAlign = 'center';
     ctx.textBaseline = "middle";
 
-    ctx.fillStyle = "red";
+    ctx.fillStyle = "brown";
     foods.forEach(({ x, y }) => {
         ctx.fillRect(x * CELL_SIZE, y * CELL_SIZE, CELL_SIZE, CELL_SIZE);
     });
